@@ -1,0 +1,9 @@
+#config.yml version1.0
+database:
+   path: plugins\Skthink\skthink.db
+   host: localhost
+   database: skthink
+   username: ''
+   password: ''
+   prefix: skthink_
+   ping_interval: 300

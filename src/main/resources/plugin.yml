@@ -1,0 +1,6 @@
+name: Skthink
+author: soramame_256
+description: un 
+version: 1.0
+main: com.github.soramame0256.Skthink
+depend: [Skript]
