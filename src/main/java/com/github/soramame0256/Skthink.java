@@ -1,6 +1,5 @@
 package com.github.soramame0256;
 
-import com.github.soramame0256.SkthinkSQL;
 
 import ch.njol.skript.*;
 import ch.njol.skript.Skript;
@@ -19,10 +18,8 @@ import org.bukkit.plugin.java.*;
 
 public class Skthink extends JavaPlugin {
 	
-	private static Skthink instance;
+	static Skthink instance;
 	SkriptAddon addon;
-	
-	
 	public void onEnable() {
 		instance = this;
 		addon = Skript.registerAddon(this);
@@ -32,13 +29,8 @@ public class Skthink extends JavaPlugin {
 			e.printStackTrace();
 		}
 		this.saveDefaultConfig();
-		//Database
-		this.getLogger().info("connecting to database...");
-		SkthinkSQL.getInstance().getLogger().info("aaa");
-		this.getLogger().info("Skthink is activated!");
-	}
-	public void onDisable() {
 		
+		this.getLogger().info("Skthink is activated!");
 	}
 	public static Skthink getInstance() {
 		return instance;
